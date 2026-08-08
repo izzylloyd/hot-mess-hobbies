@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#FBEEDD"/>
+  <g transform="translate(140,30) rotate(-4)">
+    <rect x="0" y="0" width="140" height="200" rx="10" fill="#fff" stroke="#F4B740" stroke-width="5"/>
+    <rect x="12" y="12" width="116" height="130" rx="6" fill="#1F4B3F"/>
+    <ellipse cx="70" cy="77" rx="34" ry="22" fill="#8B4A2B" stroke="#fff" stroke-width="2"/>
+    <line x1="52" y1="77" x2="88" y2="77" stroke="#fff" stroke-width="2"/>
+    <line x1="58" y1="72" x2="58" y2="82" stroke="#fff" stroke-width="1.5"/>
+    <line x1="65" y1="70" x2="65" y2="84" stroke="#fff" stroke-width="1.5"/>
+    <line x1="75" y1="70" x2="75" y2="84" stroke="#fff" stroke-width="1.5"/>
+    <line x1="82" y1="72" x2="82" y2="82" stroke="#fff" stroke-width="1.5"/>
+    <rect x="12" y="150" width="116" height="10" rx="3" fill="#FF6B4A"/>
+    <rect x="12" y="166" width="80" height="8" rx="3" fill="#DDD2C4"/>
+    <rect x="12" y="180" width="60" height="8" rx="3" fill="#DDD2C4"/>
+  </g>
+  <text x="200" y="285" font-family="sans-serif" font-size="14" fill="#8a7f74" text-anchor="middle">card photo coming soon</text>
+</svg>

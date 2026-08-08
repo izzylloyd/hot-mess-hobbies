@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#FBEEDD"/>
+  <ellipse cx="200" cy="255" rx="90" ry="14" fill="#1F4B3F" opacity="0.15"/>
+  <path d="M130 90 Q130 60 200 60 Q270 60 270 90 L280 230 Q280 250 260 250 L140 250 Q120 250 120 230 Z" fill="#DDEFE8" stroke="#2E6B58" stroke-width="3"/>
+  <rect x="150" y="55" width="100" height="16" rx="6" fill="#2E6B58"/>
+  <path d="M160 240 Q160 190 190 190 Q180 150 210 140 Q205 190 230 200 Q250 205 245 240 Z" fill="#1F4B3F"/>
+  <path d="M175 240 Q175 210 195 205" stroke="#2E6B58" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="230" cy="160" r="6" fill="#F4B740"/>
+  <circle cx="180" cy="130" r="5" fill="#F4B740"/>
+  <text x="200" y="285" font-family="sans-serif" font-size="14" fill="#8a7f74" text-anchor="middle">terrarium photo coming soon</text>
+</svg>

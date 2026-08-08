@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Hot Mess Hobbies</title>
+  <meta name="description" content="The story behind Hot Mess Hobbies, LLC.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Hot Mess<span>Hobbies</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="terrariums.html">Terrariums</a></li>
+        <li><a href="football-cards.html">Football Cards</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:24px;">
+      <div class="container">
+        <span class="badge">The Story</span>
+        <h1>One LLC. Every hobby I refuse to quit.</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container story-block text-center">
+        <p>Hot Mess Hobbies, LLC exists because I have never once stuck to a single hobby. I get into something, get a little too into it, and eventually someone asks "wait, can I buy one of those?" This is the answer.</p>
+        <p>Right now that means handmade tropical terrariums and football cards — two things that have nothing to do with each other, which is kind of the point. Instead of starting a new business every time I fall down a new rabbit hole, everything lives under one roof. As new obsessions turn into side hustles, they'll show up here too.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title text-center">What This Is About</h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <h3>Actually Handmade</h3>
+            <p>Every terrarium is built by hand, one at a time. No two are identical.</p>
+          </div>
+          <div class="value-item">
+            <h3>Genuinely a Hobby</h3>
+            <p>These are things I'd be doing anyway. Buying from Hot Mess Hobbies supports the habit directly.</p>
+          </div>
+          <div class="value-item">
+            <h3>Always Expanding</h3>
+            <p>This is built to grow — more hobbies, more little product lines, same one LLC.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="color:#FFF8F0;">Hot Mess<span>Hobbies</span></div>
+        </div>
+        <div>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="mailto:hello@hotmesshobbies.com">hello@hotmesshobbies.com</a></p>
+        </div>
+      </div>
+      <p class="footer-note">&copy; <span id="year"></span> Hot Mess Hobbies, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

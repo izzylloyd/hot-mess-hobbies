@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Mess Hobbies — Passions, Turned Into a Whole Thing</title>
+  <meta name="description" content="Hot Mess Hobbies is one LLC, several obsessions: tropical enclosed terrariums, football cards, and whatever's next.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Hot Mess<span>Hobbies</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="terrariums.html">Terrariums</a></li>
+        <li><a href="football-cards.html">Football Cards</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="badge">One LLC. Several obsessions.</span>
+        <h1>Passions, turned into a whole thing.</h1>
+        <p class="lead">Hot Mess Hobbies is the umbrella for everything I can't stop starting — right now that means tropical terrariums and football cards, with more chaos on the way.</p>
+        <div class="hero-actions">
+          <a href="terrariums.html" class="btn">Shop Terrariums</a>
+          <a href="football-cards.html" class="btn btn-outline">Shop Football Cards</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title text-center">Current Ventures</h2>
+        <p class="section-sub">Two hobbies that got a little out of hand. In a good way.</p>
+
+        <div class="venture">
+          <div class="venture-media">
+            <img src="images/terrarium-placeholder.svg" alt="Tropical enclosed terrarium illustration">
+          </div>
+          <div class="venture-copy">
+            <span class="card-tag">Terrariums</span>
+            <h3>Tropical Enclosed Terrariums</h3>
+            <p>Handmade, self-contained little ecosystems built with real tropical plants. Low maintenance, high drama — each one is one-of-a-kind.</p>
+            <a href="terrariums.html" class="btn">Browse Terrariums</a>
+          </div>
+        </div>
+
+        <div class="venture">
+          <div class="venture-media">
+            <img src="images/football-card-placeholder.svg" alt="Football trading card illustration">
+          </div>
+          <div class="venture-copy">
+            <span class="card-tag">Football Cards</span>
+            <h3>Football Cards</h3>
+            <p>Vintage finds, modern rookies, and everything in between. Buying, selling, and always down to talk shop about a want list.</p>
+            <a href="football-cards.html" class="btn">Browse Football Cards</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="coming-soon">
+          <h2>More Hobbies Coming Soon</h2>
+          <p>This LLC is built to grow sideways. If it starts as a hobby and gets a little out of control, it'll probably end up here eventually.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="color:#FFF8F0;">Hot Mess<span>Hobbies</span></div>
+          <p style="max-width:280px; opacity:0.8;">One small business, several passions, zero chill.</p>
+        </div>
+        <div>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="mailto:hello@hotmesshobbies.com">hello@hotmesshobbies.com</a></p>
+        </div>
+      </div>
+      <p class="footer-note">&copy; <span id="year"></span> Hot Mess Hobbies, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
