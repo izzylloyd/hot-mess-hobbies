@@ -21,6 +21,7 @@ src/
   js/main.js                Mobile nav toggle + contact form handling
   images/                    Placeholder graphics — swap for real photos
 eleventy.config.js        Build config
+netlify.toml               Tells Netlify how to build/deploy the site
 _site/                     Generated output (not committed — this is what gets deployed)
 ```
 
@@ -50,10 +51,14 @@ npm run build
 
 Output goes to `_site/` — that's the folder to deploy.
 
+## Deployment
+
+Hosted on Netlify, connected to this GitHub repo. Every push to `master` triggers a new build automatically using the settings in `netlify.toml` (`npm run build`, publishing `_site/`). No manual deploy steps needed.
+
 ## To do before launch
 
 - [ ] Swap placeholder images in `src/images/` for real terrarium and football card photos
 - [ ] Update placeholder listings (names/prices) in `src/_data/ventures.json`
 - [ ] Set up a real inbox for `hello@hotmesshobbies.com` (or swap in whatever address you want to use — update it once in `src/_data/site.json`)
-- [ ] Decide on hosting (GitHub Pages / Netlify) and point the GoDaddy domain at it — hosting will need to run `npm run build` and deploy the `_site/` folder
-- [ ] Optional: wire up the contact form to an actual email service (e.g. Formspree) since it's currently just a placeholder
+- [ ] Point the GoDaddy domain at Netlify (see Netlify's domain settings for the DNS records to add at GoDaddy)
+- [ ] Optional: wire up the contact form to an actual email service (Netlify Forms or Formspree) since it's currently just a placeholder
