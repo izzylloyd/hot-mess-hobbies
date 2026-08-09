@@ -139,7 +139,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: 72px 0 56px;
+  padding: 72px 0 20px;
   text-align: center;
 }
 .hero h1 {
@@ -292,7 +292,7 @@ section { padding: 56px 0; }
 .text-center { text-align: center; }
 .story-block {
   max-width: 900px;
-  margin: 0 auto 32px;
+  margin: 0 auto 10px;
 }
 .values-grid {
   display: grid;
