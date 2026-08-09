@@ -291,7 +291,7 @@ section { padding: 56px 0; }
 /* ---------- Misc ---------- */
 .text-center { text-align: center; }
 .story-block {
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto 32px;
 }
 .values-grid {
