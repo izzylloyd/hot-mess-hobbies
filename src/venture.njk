@@ -14,6 +14,11 @@ eleventyComputed:
     <span class="badge">{{ venture.tag }}</span>
     <h1>{{ venture.name }}</h1>
     <p class="lead">{{ venture.lead }}</p>
+    {%- if venture.externalShopUrl %}
+    <div class="hero-actions">
+      <a href="{{ venture.externalShopUrl }}" class="btn" target="_blank" rel="noopener">{{ venture.externalShopLabel }}</a>
+    </div>
+    {%- endif %}
   </div>
 </section>
 
@@ -30,6 +35,9 @@ eleventyComputed:
           <h3>{{ product.name }}</h3>
           <p>{{ product.description }}</p>
           <p class="price">{{ product.price }}</p>
+          {%- if product.listingUrl %}
+          <a href="{{ product.listingUrl }}" class="btn" target="_blank" rel="noopener">View on eBay</a>
+          {%- endif %}
         </div>
       </div>
       {%- endfor %}

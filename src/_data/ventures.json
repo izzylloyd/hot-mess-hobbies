@@ -48,16 +48,19 @@
     "homeCta": "Browse Football Cards",
     "listingTitle": "Current Listings",
     "listingIntro": "Placeholder listings below — swap these out with real cards, photos, and prices whenever you're ready.",
+    "externalShopUrl": "https://www.ebay.com/usr/hotmesshobbies",
+    "externalShopLabel": "Shop on eBay",
     "products": [
+      {
+        "name": "Jordan Addison — 2023 Panini Obsidian RC #7, Black Color Blast",
+        "description": "Rookie card, Black Color Blast parallel, professionally graded PSA 10.",
+        "price": "$750 or Best Offer",
+        "listingUrl": "https://www.ebay.com/itm/366594444552"
+      },
       {
         "name": "Rookie Card, Raw",
         "description": "Ungraded rookie card, near-mint condition.",
         "price": "$20"
-      },
-      {
-        "name": "Vintage Star, Graded",
-        "description": "Professionally graded vintage card, slabbed and ready to display.",
-        "price": "$120"
       },
       {
         "name": "Mystery Lot (10 cards)",
