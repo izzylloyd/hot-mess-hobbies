@@ -13,7 +13,12 @@ description: Get in touch with Hot Mess Hobby Shop.
 
 <section>
   <div class="container">
-    <form class="contact-form">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none;">
+        <label>Leave this field blank: <input name="bot-field"></label>
+      </p>
+
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -21,17 +26,17 @@ description: Get in touch with Hot Mess Hobby Shop.
       <input type="email" id="email" name="email" required>
 
       <label for="topic">What's this about?</label>
-      <input type="text" id="topic" name="topic" placeholder="question, comment, haiku, etc">
+      <input type="text" id="topic" name="topic">
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <textarea id="message" name="message" rows="5" placeholder="question, comment, haiku, etc" required></textarea>
 
       <div class="text-center" style="margin-top:24px;">
         <button type="submit" class="btn">Send Message</button>
       </div>
     </form>
     <p class="text-center" style="margin-top:24px; opacity:0.7;">
-      This form isn't connected to email yet — for now, reach out directly at
+      Prefer email? Reach us directly at
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
     </p>
   </div>
