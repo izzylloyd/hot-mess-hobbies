@@ -1,4 +1,4 @@
-// Hot Mess Hobbies — shared site behavior
+// Hot Mess Hobby Shop — shared site behavior
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert("Thanks! This form isn't wired up to send messages yet — for now, email hello@hotmesshobbies.com directly.");
+      alert("Thanks! This form isn't wired up to send messages yet — for now, email hello@hotmesshobbyshop.com directly.");
       form.reset();
     });
   }

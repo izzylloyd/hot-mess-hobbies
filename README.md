@@ -1,6 +1,6 @@
-# Hot Mess Hobbies
+# Hot Mess Hobby Shop
 
-Website for Hot Mess Hobbies, LLC — the umbrella site for Izzy's passions-turned-side-hustles (currently: tropical enclosed terrariums and football cards, with more to come).
+Website for Hot Mess Hobby Shop, LLC — the umbrella site for Izzy's passions-turned-side-hustles (currently: tropical enclosed terrariums and football cards, with more to come). Live at [hotmesshobbyshop.com](https://hotmesshobbyshop.com/).
 
 Built with [Eleventy](https://www.11ty.dev/) — a static site generator. Pages are built from shared templates + data, so a new hobby means adding data, not hand-copying HTML.
 
@@ -55,10 +55,10 @@ Output goes to `_site/` — that's the folder to deploy.
 
 Hosted on Netlify, connected to this GitHub repo. Every push to `master` triggers a new build automatically using the settings in `netlify.toml` (`npm run build`, publishing `_site/`). No manual deploy steps needed.
 
-## To do before launch
+## To do
 
 - [ ] Swap placeholder images in `src/images/` for real terrarium and football card photos
 - [ ] Update placeholder listings (names/prices) in `src/_data/ventures.json`
-- [ ] Set up a real inbox for `hello@hotmesshobbies.com` (or swap in whatever address you want to use — update it once in `src/_data/site.json`)
-- [ ] Point the GoDaddy domain at Netlify (see Netlify's domain settings for the DNS records to add at GoDaddy)
+- [ ] Set up a real inbox for `hello@hotmesshobbyshop.com` (or swap in whatever address you want to use — update it once in `src/_data/site.json`, and once in the alert text in `src/js/main.js`)
+- [x] Point the domain at Netlify
 - [ ] Optional: wire up the contact form to an actual email service (Netlify Forms or Formspree) since it's currently just a placeholder

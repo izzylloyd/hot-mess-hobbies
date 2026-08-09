@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "Website for Hot Mess Hobbies, LLC — the umbrella site for Izzy's passions-turned-side-hustles (currently: tropical enclosed terrariums and football cards, with more to come).",
+  "description": "Website for Hot Mess Hobby Shop, LLC — the umbrella site for Izzy's passions-turned-side-hustles (currently: tropical enclosed terrariums and football cards, with more to come).",
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",

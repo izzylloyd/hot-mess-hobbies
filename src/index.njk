@@ -1,13 +1,13 @@
 ---
 layout: base.njk
-title: Hot Mess Hobbies — Passions, Turned Into a Whole Thing
-description: Hot Mess Hobbies is one LLC, several obsessions — tropical enclosed terrariums, football cards, and whatever's next.
+title: Hot Mess Hobby Shop — Passions, Turned Into a Whole Thing
+description: Hot Mess Hobby Shop is one LLC, several obsessions — tropical enclosed terrariums, football cards, and whatever's next.
 ---
 <section class="hero">
   <div class="container">
     <span class="badge">One LLC. Several obsessions.</span>
     <h1>Passions, turned into a whole thing.</h1>
-    <p class="lead">Hot Mess Hobbies is the umbrella for everything I can't stop starting — right now that means tropical terrariums and football cards, with more chaos on the way.</p>
+    <p class="lead">Hot Mess Hobby Shop is the umbrella for everything I can't stop starting — right now that means tropical terrariums and football cards, with more chaos on the way.</p>
     <div class="hero-actions">
       {%- for venture in ventures %}
       <a href="{{ venture.slug }}.html" class="btn{% if not loop.first %} btn-outline{% endif %}">{{ venture.homeCta }}</a>
