@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Hot Mess<span>Hobbies</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
+        {%- for venture in ventures %}
+        <li><a href="{{ venture.slug }}.html"{% if page.url == '/' + venture.slug + '.html' %} class="active"{% endif %}>{{ venture.navLabel }}</a></li>
+        {%- endfor %}
+        <li><a href="about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>About</a></li>
+        <li><a href="contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="color:#FFF8F0;">Hot Mess<span>Hobbies</span></div>
+          <p style="max-width:280px; opacity:0.8;">{{ site.tagline }}</p>
+        </div>
+        <div>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        </div>
+      </div>
+      <p class="footer-note">&copy; <span id="year"></span> {{ site.name }}, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

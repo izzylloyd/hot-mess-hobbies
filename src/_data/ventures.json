@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "terrariums",
+    "navLabel": "Terrariums",
+    "name": "Terrariums",
+    "metaDescription": "Handmade tropical enclosed terrariums from Hot Mess Hobbies.",
+    "tag": "Tropical & Enclosed",
+    "lead": "Little self-sustaining worlds in glass. Each one is handmade with real tropical plants, so no two are exactly alike.",
+    "image": "terrarium-placeholder.svg",
+    "homeHeading": "Tropical Enclosed Terrariums",
+    "homeDescription": "Handmade, self-contained little ecosystems built with real tropical plants. Low maintenance, high drama — each one is one-of-a-kind.",
+    "homeCta": "Browse Terrariums",
+    "listingTitle": "Available Now",
+    "listingIntro": "Placeholder listings below — swap these out with real photos, names, and prices whenever you're ready.",
+    "products": [
+      {
+        "name": "Rainforest Jar, Small",
+        "description": "A compact enclosed terrarium with moss, ferns, and a tiny understory feel.",
+        "price": "$45"
+      },
+      {
+        "name": "Rainforest Jar, Large",
+        "description": "Our biggest build — more plants, more layers, more drama.",
+        "price": "$85"
+      },
+      {
+        "name": "Custom Build",
+        "description": "Pick your vessel and plant mix — built to order.",
+        "price": "Starting at $60"
+      }
+    ],
+    "highlight": {
+      "heading": "Low Maintenance, On Purpose",
+      "body": "Enclosed terrariums create their own little water cycle, so they need very little upkeep — just bright, indirect light and the occasional check-in. Perfect for people who love plants but have, historically, killed a lot of plants.",
+      "ctaText": "Ask About Custom Orders"
+    }
+  },
+  {
+    "slug": "football-cards",
+    "navLabel": "Football Cards",
+    "name": "Football Cards",
+    "metaDescription": "Football card buying, selling, and trading from Hot Mess Hobbies.",
+    "tag": "Vintage & Modern",
+    "lead": "Rookies, vintage finds, and everything in between. Always happy to talk trades or work a want list.",
+    "image": "football-card-placeholder.svg",
+    "homeHeading": "Football Cards",
+    "homeDescription": "Vintage finds, modern rookies, and everything in between. Buying, selling, and always down to talk shop about a want list.",
+    "homeCta": "Browse Football Cards",
+    "listingTitle": "Current Listings",
+    "listingIntro": "Placeholder listings below — swap these out with real cards, photos, and prices whenever you're ready.",
+    "products": [
+      {
+        "name": "Rookie Card, Raw",
+        "description": "Ungraded rookie card, near-mint condition.",
+        "price": "$20"
+      },
+      {
+        "name": "Vintage Star, Graded",
+        "description": "Professionally graded vintage card, slabbed and ready to display.",
+        "price": "$120"
+      },
+      {
+        "name": "Mystery Lot (10 cards)",
+        "description": "A grab bag of mixed-year commons and semi-stars.",
+        "price": "$15"
+      }
+    ],
+    "highlight": {
+      "heading": "Have a Want List?",
+      "body": "Looking for a specific player, year, or set? Send over your want list and I'll keep an eye out — always happy to talk trades too.",
+      "ctaText": "Get In Touch"
+    }
+  }
+]

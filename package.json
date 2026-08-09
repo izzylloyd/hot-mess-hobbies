@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Website for Hot Mess Hobbies, LLC — the umbrella site for Izzy's passions-turned-side-hustles (currently: tropical enclosed terrariums and football cards, with more to come).",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izzylloyd/hot-mess-hobbies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/izzylloyd/hot-mess-hobbies/issues"
+  },
+  "homepage": "https://github.com/izzylloyd/hot-mess-hobbies#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

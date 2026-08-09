@@ -1,0 +1,53 @@
+---
+pagination:
+  data: ventures
+  size: 1
+  alias: venture
+permalink: "{{ venture.slug }}.html"
+layout: base.njk
+eleventyComputed:
+  title: "{{ venture.name }} — Hot Mess Hobbies"
+  description: "{{ venture.metaDescription }}"
+---
+<section class="hero" style="padding-bottom:24px;">
+  <div class="container">
+    <span class="badge">{{ venture.tag }}</span>
+    <h1>{{ venture.name }}</h1>
+    <p class="lead">{{ venture.lead }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title text-center">{{ venture.listingTitle }}</h2>
+    <p class="section-sub">{{ venture.listingIntro }}</p>
+
+    <div class="card-grid">
+      {%- for product in venture.products %}
+      <div class="card">
+        <div class="card-img"><img src="images/{{ venture.image }}" alt="{{ venture.name }} placeholder"></div>
+        <div class="card-body">
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.description }}</p>
+          <p class="price">{{ product.price }}</p>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="venture">
+      <div class="venture-media">
+        <img src="images/{{ venture.image }}" alt="{{ venture.name }} detail">
+      </div>
+      <div class="venture-copy">
+        <h2>{{ venture.highlight.heading }}</h2>
+        <p>{{ venture.highlight.body }}</p>
+        <a href="contact.html" class="btn">{{ venture.highlight.ctaText }}</a>
+      </div>
+    </div>
+  </div>
+</section>

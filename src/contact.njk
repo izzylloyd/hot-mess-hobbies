@@ -1,0 +1,39 @@
+---
+layout: base.njk
+permalink: contact.html
+title: Contact — Hot Mess Hobbies
+description: Get in touch with Hot Mess Hobbies.
+---
+<section class="hero" style="padding-bottom:24px;">
+  <div class="container">
+    <span class="badge">Say Hi</span>
+    <h1>Get In Touch</h1>
+    <p class="lead">Questions about a terrarium, a card, a want list, or a custom order — send it over.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="topic">What's this about?</label>
+      <input type="text" id="topic" name="topic" placeholder="Terrarium order, football card want list, etc.">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <div class="text-center" style="margin-top:24px;">
+        <button type="submit" class="btn">Send Message</button>
+      </div>
+    </form>
+    <p class="text-center" style="margin-top:24px; opacity:0.7;">
+      This form isn't connected to email yet — for now, reach out directly at
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+    </p>
+  </div>
+</section>
