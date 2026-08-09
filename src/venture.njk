@@ -30,7 +30,7 @@ eleventyComputed:
     <div class="card-grid">
       {%- for product in venture.products %}
       <div class="card">
-        <div class="card-img"><img src="images/{{ venture.image }}" alt="{{ venture.name }} placeholder"></div>
+        <div class="card-img"><img src="images/{{ product.image or venture.image }}" alt="{{ product.name }}"></div>
         <div class="card-body">
           <h3>{{ product.name }}</h3>
           <p>{{ product.description }}</p>
