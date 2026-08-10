@@ -25,7 +25,9 @@
       {
         "name": "Custom Build",
         "description": "Pick your vessel and plant mix — built to order.",
-        "price": "Starting at $60"
+        "price": "Starting at $60",
+        "ctaUrl": "build-a-terrarium.html",
+        "ctaLabel": "Start Building"
       }
     ],
     "highlight": {

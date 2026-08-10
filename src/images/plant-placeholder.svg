@@ -1,0 +1,10 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#FBEEDD"/>
+  <ellipse cx="200" cy="245" rx="70" ry="12" fill="#1F4B3F" opacity="0.15"/>
+  <path d="M200 240 L200 120" stroke="#2E6B58" stroke-width="5" stroke-linecap="round"/>
+  <path d="M200 200 Q160 190 150 150 Q195 155 200 200 Z" fill="#1F4B3F"/>
+  <path d="M200 175 Q240 165 250 125 Q205 130 200 175 Z" fill="#2E6B58"/>
+  <path d="M200 145 Q170 135 165 100 Q198 108 200 145 Z" fill="#1F4B3F"/>
+  <path d="M200 120 Q225 105 222 75 Q198 88 200 120 Z" fill="#2E6B58"/>
+  <text x="200" y="278" font-family="sans-serif" font-size="14" fill="#8a7f74" text-anchor="middle">plant photo coming soon</text>
+</svg>

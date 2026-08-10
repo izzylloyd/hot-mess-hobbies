@@ -1,0 +1,83 @@
+{
+  "vesselSizes": [
+    {
+      "id": "small",
+      "name": "Small",
+      "summary": "Moss + 1 Ground Cover + 1 Compact",
+      "limits": { "moss": 1, "groundCover": 1, "compact": 1, "stem": 0 }
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "summary": "Moss + 1 Ground Cover + 2 Compact + 1 Stem",
+      "limits": { "moss": 1, "groundCover": 1, "compact": 2, "stem": 1 }
+    },
+    {
+      "id": "large",
+      "name": "Large",
+      "summary": "Moss + 2 Ground Cover + 2 Compact + 2 Stem",
+      "limits": { "moss": 1, "groundCover": 2, "compact": 2, "stem": 2 }
+    }
+  ],
+  "plantCategories": [
+    {
+      "id": "moss",
+      "label": "Moss",
+      "plants": [
+        { "commonName": "Christmas Moss", "latinName": "Vesicularia montagnei" },
+        { "commonName": "Riccia Moss", "latinName": "Riccia fluitans" },
+        { "commonName": "Weeping Moss", "latinName": "Vesicularia ferriei" }
+      ]
+    },
+    {
+      "id": "groundCover",
+      "label": "Ground Cover",
+      "plants": [
+        { "commonName": "Hydrocotyle Japan", "latinName": "Hydrocotyle tripartita" },
+        { "commonName": "Pearl Weed", "latinName": "Hemianthus micranthemoides" },
+        { "commonName": "Dwarf Baby Tears", "latinName": "Hemianthus callitrichoides" }
+      ]
+    },
+    {
+      "id": "compact",
+      "label": "Compact",
+      "plants": [
+        { "commonName": "Calico Plant", "latinName": "Alternanthera bettzickiana" },
+        { "commonName": "Red Fittonia", "latinName": "Fittonia albivenis" },
+        { "commonName": "Cardinal Plant", "latinName": "Lobelia cardinalis" },
+        { "commonName": "Rotala Blood Red", "latinName": "Rotala rotundifolia var. blood red" }
+      ]
+    },
+    {
+      "id": "stem",
+      "label": "Stem",
+      "plants": [
+        { "commonName": "Purple Heart", "latinName": "Tradescantia pallida" },
+        { "commonName": "Ludwigia Super Red", "latinName": "Ludwigia palustris" },
+        { "commonName": "Friendship Plant", "latinName": "Pilea peperomioides" }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "wood",
+      "label": "Wood Feature",
+      "hint": "Accent piece — a small twig or root tucked among the plants. Central feature — a larger branch or driftwood piece that anchors the whole design.",
+      "options": [
+        { "value": "None", "image": "feature-none-placeholder.svg" },
+        { "value": "Accent piece", "image": "wood-accent-placeholder.svg" },
+        { "value": "Central feature", "image": "wood-central-placeholder.svg" }
+      ]
+    },
+    {
+      "id": "stone",
+      "label": "Stone Feature",
+      "hint": "Accent piece — a few small pebbles scattered near the base. Central feature — a larger rock or cluster that the plants grow around.",
+      "options": [
+        { "value": "None", "image": "feature-none-placeholder.svg" },
+        { "value": "Accent piece", "image": "stone-accent-placeholder.svg" },
+        { "value": "Central feature", "image": "stone-central-placeholder.svg" }
+      ]
+    }
+  ]
+}

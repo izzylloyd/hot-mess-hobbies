@@ -37,6 +37,9 @@ eleventyComputed:
           {%- if product.listingUrl %}
           <a href="{{ product.listingUrl }}" class="btn" target="_blank" rel="noopener">View on eBay</a>
           {%- endif %}
+          {%- if product.ctaUrl %}
+          <a href="{{ product.ctaUrl }}" class="btn">{{ product.ctaLabel }}</a>
+          {%- endif %}
         </div>
       </div>
       {%- endfor %}

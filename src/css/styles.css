@@ -307,3 +307,143 @@ section { padding: 20px 0; }
   box-shadow: var(--shadow);
   text-align: center;
 }
+
+/* ---------- Terrarium builder ---------- */
+.size-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.size-option {
+  display: block;
+  border: 2px solid var(--color-cream-dark);
+  border-radius: var(--radius);
+  padding: 16px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.size-option:has(input:checked) {
+  border-color: var(--color-coral);
+  background: var(--color-cream-dark);
+}
+.size-option input { position: absolute; opacity: 0; pointer-events: none; }
+.size-option-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.size-option-summary {
+  display: block;
+  font-size: 0.85rem;
+  color: #5a5049;
+  margin-top: 4px;
+}
+.plant-category-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+.plant-category-fieldset legend {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0;
+  margin-bottom: 12px;
+}
+.plant-category-fieldset legend span {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #5a5049;
+}
+.plant-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+.plant-card {
+  display: block;
+  background: #fff;
+  border: 2px solid var(--color-cream-dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.plant-card:has(input:checked) {
+  border-color: var(--color-coral);
+  transform: translateY(-2px);
+}
+.plant-card:has(input:disabled) { opacity: 0.4; cursor: default; }
+.plant-card input { position: absolute; opacity: 0; pointer-events: none; }
+.plant-card-img {
+  display: block;
+  aspect-ratio: 4/3;
+  background: var(--color-cream-dark);
+}
+.plant-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.plant-card-body { display: block; padding: 12px; }
+.plant-card-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.plant-card-latin {
+  display: block;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #5a5049;
+  margin-top: 2px;
+}
+.plant-card-price {
+  display: block;
+  font-family: var(--font-display);
+  color: var(--color-coral-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+.feature-row { margin-bottom: 20px; }
+.feature-row-label {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.feature-row-hint {
+  font-size: 0.85rem;
+  color: #5a5049;
+  margin: 0 0 10px;
+}
+.pill-group { display: flex; gap: 14px; flex-wrap: wrap; }
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+  cursor: pointer;
+}
+.feature-card input { position: absolute; opacity: 0; pointer-events: none; }
+.feature-card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 2px solid var(--color-cream-dark);
+  background: var(--color-cream-dark);
+  transition: border-color 0.15s ease;
+}
+.feature-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.feature-card:has(input:checked) .feature-card-img { border-color: var(--color-coral); }
+.feature-card-label {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.feature-card:has(input:checked) .feature-card-label { color: var(--color-coral-dark); }

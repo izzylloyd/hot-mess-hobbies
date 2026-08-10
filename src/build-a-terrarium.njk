@@ -1,0 +1,93 @@
+---
+layout: base.njk
+permalink: build-a-terrarium.html
+title: Build Your Terrarium — Hot Mess Hobby Shop
+description: Design your own custom terrarium — choose a vessel size, pick your plants, and add a wood or stone feature.
+---
+<section class="hero" style="padding-bottom:0;">
+  <div class="container">
+    <h1>Build Your Terrarium</h1>
+    <p class="lead">Pick a vessel size, choose your plants, and add a wood or stone feature. Submit your build and we'll follow up by email to confirm details and pricing before we get started.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container" data-terrarium-builder>
+    <script type="application/json" id="builder-data">{{ terrariumBuilder.vesselSizes | dump | safe }}</script>
+
+    <form name="terrarium-build" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" style="max-width:960px;">
+      <input type="hidden" name="form-name" value="terrarium-build">
+      <p style="display:none;">
+        <label>Leave this field blank: <input name="bot-field"></label>
+      </p>
+
+      <h2 class="section-title">1. Choose Your Vessel Size</h2>
+      <div class="size-options">
+        {%- for size in terrariumBuilder.vesselSizes %}
+        <label class="size-option">
+          <input type="radio" name="vesselSize" value="{{ size.name }}" required>
+          <span class="size-option-name">{{ size.name }}</span>
+          <span class="size-option-summary">{{ size.summary }}</span>
+        </label>
+        {%- endfor %}
+      </div>
+
+      <p data-plant-prompt style="margin-top:24px; opacity:0.7;">Select a vessel size above to see your plant options.</p>
+
+      <div data-plant-step hidden>
+        <h2 class="section-title" style="margin-top:32px;">2. Choose Your Plants</h2>
+        {%- for category in terrariumBuilder.plantCategories %}
+        <fieldset data-category="{{ category.id }}" class="plant-category-fieldset">
+          <legend>{{ category.label }} <span data-count-label></span></legend>
+          <div class="plant-card-grid">
+            {%- for plant in category.plants %}
+            <label class="plant-card">
+              <input type="checkbox" name="{{ category.id }}" value="{{ plant.commonName }}">
+              <span class="plant-card-img"><img src="images/{{ plant.image or 'plant-placeholder.svg' }}" alt="{{ plant.commonName }}"></span>
+              <span class="plant-card-body">
+                <span class="plant-card-name">{{ plant.commonName }}</span>
+                <span class="plant-card-latin">{{ plant.latinName }}</span>
+                {%- if plant.price %}<span class="plant-card-price">{{ plant.price }}</span>{%- endif %}
+              </span>
+            </label>
+            {%- endfor %}
+          </div>
+        </fieldset>
+        {%- endfor %}
+
+        <h2 class="section-title" style="margin-top:32px;">3. Extra Features</h2>
+        {%- for feature in terrariumBuilder.features %}
+        <div class="feature-row">
+          <span class="feature-row-label">{{ feature.label }}</span>
+          <p class="feature-row-hint">{{ feature.hint }}</p>
+          <div class="pill-group">
+            {%- for option in feature.options %}
+            <label class="feature-card">
+              <input type="radio" name="{{ feature.id }}Feature" value="{{ option.value }}"{% if loop.first %} checked{% endif %}>
+              <span class="feature-card-img"><img src="images/{{ option.image }}" alt="{{ option.value }}"></span>
+              <span class="feature-card-label">{{ option.value }}</span>
+            </label>
+            {%- endfor %}
+          </div>
+        </div>
+        {%- endfor %}
+
+        <h2 class="section-title" style="margin-top:32px;">4. Your Details</h2>
+        <label for="tb-name">Name</label>
+        <input type="text" id="tb-name" name="name" required>
+
+        <label for="tb-email">Email</label>
+        <input type="email" id="tb-email" name="email" required>
+
+        <label for="tb-notes">Anything else? (optional)</label>
+        <textarea id="tb-notes" name="notes" rows="4" placeholder="Wood/stone style preferences, color palette, vessel shape, etc."></textarea>
+
+        <div class="text-center" style="margin-top:24px;">
+          <button type="submit" class="btn">Request This Build</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="js/terrarium-builder.js"></script>
