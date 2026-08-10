@@ -24,36 +24,36 @@
       "id": "moss",
       "label": "Moss",
       "plants": [
-        { "commonName": "Christmas Moss", "latinName": "Vesicularia montagnei" },
-        { "commonName": "Riccia Moss", "latinName": "Riccia fluitans" },
-        { "commonName": "Weeping Moss", "latinName": "Vesicularia ferriei" }
+        { "commonName": "Christmas Moss", "latinName": "Vesicularia montagnei", "image": "christmas-moss.webp" },
+        { "commonName": "Riccia Moss", "latinName": "Riccia fluitans", "image": "riccia-moss.webp" },
+        { "commonName": "Weeping Moss", "latinName": "Vesicularia ferriei", "image": "weeping-moss.webp" }
       ]
     },
     {
       "id": "groundCover",
       "label": "Ground Cover",
       "plants": [
-        { "commonName": "Hydrocotyle Japan", "latinName": "Hydrocotyle tripartita" },
-        { "commonName": "Pearl Weed", "latinName": "Hemianthus micranthemoides" },
-        { "commonName": "Dwarf Baby Tears", "latinName": "Hemianthus callitrichoides" }
+        { "commonName": "Hydrocotyle Japan", "latinName": "Hydrocotyle tripartita", "image": "hydrocotyle-japan.webp" },
+        { "commonName": "Pearl Weed", "latinName": "Hemianthus micranthemoides", "image": "pearl-weed.webp" },
+        { "commonName": "Dwarf Baby Tears", "latinName": "Hemianthus callitrichoides", "image": "dwarf-baby-tears.webp" }
       ]
     },
     {
       "id": "compact",
       "label": "Compact",
       "plants": [
-        { "commonName": "Calico Plant", "latinName": "Alternanthera bettzickiana" },
-        { "commonName": "Red Fittonia", "latinName": "Fittonia albivenis" },
-        { "commonName": "Cardinal Plant", "latinName": "Lobelia cardinalis" },
-        { "commonName": "Rotala Blood Red", "latinName": "Rotala rotundifolia var. blood red" }
+        { "commonName": "Calico Plant", "latinName": "Alternanthera bettzickiana", "image": "calico-plant.webp" },
+        { "commonName": "Red Fittonia", "latinName": "Fittonia albivenis", "image": "red-fittonia.webp" },
+        { "commonName": "Cardinal Plant", "latinName": "Lobelia cardinalis", "image": "cardinal-plant.webp" },
+        { "commonName": "Rotala Blood Red", "latinName": "Rotala rotundifolia var. blood red", "image": "rotala-blood-red.webp" }
       ]
     },
     {
       "id": "stem",
       "label": "Stem",
       "plants": [
-        { "commonName": "Purple Heart", "latinName": "Tradescantia pallida" },
-        { "commonName": "Ludwigia Super Red", "latinName": "Ludwigia palustris" },
+        { "commonName": "Purple Zebrina", "latinName": "Tradescantia zebrina", "image": "purple-zebrina.webp" },
+        { "commonName": "Ludwigia Super Red", "latinName": "Ludwigia palustris", "image": "ludwigia-super-red.webp" },
         { "commonName": "Friendship Plant", "latinName": "Pilea peperomioides" }
       ]
     }
@@ -65,8 +65,8 @@
       "hint": "Accent piece — a small twig or root tucked among the plants. Central feature — a larger branch or driftwood piece that anchors the whole design.",
       "options": [
         { "value": "None", "image": "feature-none-placeholder.svg" },
-        { "value": "Accent piece", "image": "wood-accent-placeholder.svg" },
-        { "value": "Central feature", "image": "wood-central-placeholder.svg" }
+        { "value": "Accent piece", "image": "wood-accent.webp" },
+        { "value": "Central feature", "image": "wood-central.webp" }
       ]
     },
     {
@@ -75,8 +75,8 @@
       "hint": "Accent piece — a few small pebbles scattered near the base. Central feature — a larger rock or cluster that the plants grow around.",
       "options": [
         { "value": "None", "image": "feature-none-placeholder.svg" },
-        { "value": "Accent piece", "image": "stone-accent-placeholder.svg" },
-        { "value": "Central feature", "image": "stone-central-placeholder.svg" }
+        { "value": "Accent piece", "image": "stone-accent.webp" },
+        { "value": "Central feature", "image": "stone-central.webp" }
       ]
     }
   ]
