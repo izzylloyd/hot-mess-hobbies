@@ -23,10 +23,17 @@ description: Hot Mess Hobby Shop is one LLC, several obsessions — tropical enc
     {% for venture in ventures %}
     <div class="venture">
       <div class="venture-media">
+        {%- if venture.homeImages %}
+        <div class="venture-media-grid">
+          {%- for img in venture.homeImages %}
+          <img src="images/{{ img }}" alt="{{ venture.name }} example">
+          {%- endfor %}
+        </div>
+        {%- else %}
         <img src="images/{{ venture.image }}" alt="{{ venture.name }} illustration">
+        {%- endif %}
       </div>
       <div class="venture-copy">
-        <span class="card-tag">{{ venture.navLabel }}</span>
         <h3>{{ venture.homeHeading }}</h3>
         <p>{{ venture.homeDescription }}</p>
         <a href="{{ venture.slug }}.html" class="btn">{{ venture.homeCta }}</a>

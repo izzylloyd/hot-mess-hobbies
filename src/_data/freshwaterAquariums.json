@@ -1,0 +1,43 @@
+{
+  "metaDescription": "Balanced freshwater aquarium builds, consultations, and aquatic plant cuttings from Hot Mess Hobby Shop.",
+  "lead": "My most obsessive hobby: freshwater tanks built to balance themselves. Plants and bioload in equilibrium, healthy fish, low-stress upkeep — just top off the water and let it run. Everything below comes out of that same philosophy: aquatic plant cuttings from tanks that actually work, real builds I've done, and a way to get your own tank into balance.",
+  "plants": {
+    "heading": "Aquatic Plants",
+    "intro": "Cuttings and cultures pulled straight from tanks that actually work — no algae, no pests, no shortcuts. Placeholder listings below — swap these out with real cuttings, photos, and prices whenever you're ready.",
+    "products": [
+      {
+        "name": "Java Fern",
+        "description": "Hardy, low-light rhizome plant. Comes as an established portion ready to attach to hardscape.",
+        "price": "$8"
+      },
+      {
+        "name": "Anubias Nana",
+        "description": "Slow-growing, nearly indestructible. A staple for any balanced tank.",
+        "price": "$10"
+      },
+      {
+        "name": "Floating Plant Mix",
+        "description": "A mix of frogbit and salvinia — natural nutrient export and shade for shy fish.",
+        "price": "$6"
+      }
+    ]
+  },
+  "gallery": {
+    "heading": "Tanks I've Built",
+    "intro": "A few balanced ecosystems, in different sizes — each one basically runs itself.",
+    "tanks": [
+      { "size": "1.5 Gallon", "image": "tank-1-5gal.webp" },
+      { "size": "3 Gallon", "image": "tank-3gal.webp" },
+      { "size": "5 Gallon", "image": "tank-5gal.webp" },
+      { "size": "10 Gallon", "image": "tank-10gal-1.webp" },
+      { "size": "10 Gallon", "image": "tank-10gal-2.webp" },
+      { "size": "15 Gallon", "image": "tank-15gal.webp" },
+      { "size": "20 Gallon", "image": "tank-20gal-1.webp" },
+      { "size": "20 Gallon", "image": "tank-20gal-2.webp" }
+    ]
+  },
+  "requestForm": {
+    "heading": "Request a Consultation or Custom Build",
+    "intro": "Want help getting your tank into balance, or a full custom build? Custom builds are local pickup/delivery only. Tell me what you're working with and I'll follow up."
+  }
+}

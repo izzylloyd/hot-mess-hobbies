@@ -74,5 +74,16 @@
       "body": "Looking for a specific player, year, or set? Send over your want list and I'll keep an eye out — always happy to talk trades too.",
       "ctaText": "Get In Touch"
     }
+  },
+  {
+    "slug": "freshwater-aquariums",
+    "navLabel": "Freshwater Aquariums",
+    "name": "Freshwater Aquariums",
+    "customPage": true,
+    "image": "tank-10gal-1.webp",
+    "homeImages": ["tank-3gal.webp", "tank-10gal-1.webp", "tank-15gal.webp", "tank-20gal-2.webp"],
+    "homeHeading": "Freshwater Aquariums",
+    "homeDescription": "Balanced tank builds, consultations, and aquatic plant cuttings — ecosystems that only need topping off.",
+    "homeCta": "Explore Freshwater Aquariums"
   }
 ]

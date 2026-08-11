@@ -13,6 +13,7 @@
   --color-mustard: #F4B740;
   --color-cream: #FFF8F0;
   --color-cream-dark: #FBEEDD;
+  --color-sage: #E2ECE4;
   --color-ink: #2B2420;
 
   --font-display: 'Fredoka', sans-serif;
@@ -181,7 +182,7 @@ section { padding: 20px 0; }
 .card:hover { transform: translateY(-4px) rotate(-0.5deg); }
 .card-img {
   aspect-ratio: 4/3;
-  background: var(--color-cream-dark);
+  background: var(--color-sage);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +218,7 @@ section { padding: 20px 0; }
 .venture:nth-child(even) { grid-template-columns: 1fr 1fr; }
 .venture:nth-child(even) .venture-media { order: 2; }
 .venture-media {
-  background: var(--color-cream-dark);
+  background: var(--color-sage);
   border-radius: var(--radius);
   aspect-ratio: 4/3;
   display: flex;
@@ -225,6 +226,16 @@ section { padding: 20px 0; }
   justify-content: center;
   overflow: hidden;
 }
+.venture-media img { width: 100%; height: 100%; object-fit: cover; }
+.venture-media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+}
+.venture-media-grid img { width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 720px) {
   .venture, .venture:nth-child(even) { grid-template-columns: 1fr; }
   .venture:nth-child(even) .venture-media { order: 0; }
@@ -380,7 +391,7 @@ section { padding: 20px 0; }
 .plant-card-img {
   display: block;
   aspect-ratio: 4/3;
-  background: var(--color-cream-dark);
+  background: var(--color-sage);
 }
 .plant-card-img img { width: 100%; height: 100%; object-fit: cover; }
 .plant-card-body { display: block; padding: 12px; }
@@ -433,7 +444,7 @@ section { padding: 20px 0; }
   border-radius: var(--radius);
   overflow: hidden;
   border: 2px solid var(--color-cream-dark);
-  background: var(--color-cream-dark);
+  background: var(--color-sage);
   transition: border-color 0.15s ease;
 }
 .feature-card-img img { width: 100%; height: 100%; object-fit: cover; }
@@ -447,3 +458,21 @@ section { padding: 20px 0; }
   text-align: center;
 }
 .feature-card:has(input:checked) .feature-card-label { color: var(--color-coral-dark); }
+.text-pill-group { display: flex; gap: 10px; flex-wrap: wrap; }
+.text-pill { cursor: pointer; }
+.text-pill input { position: absolute; opacity: 0; pointer-events: none; }
+.text-pill span {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 2px solid var(--color-cream-dark);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.15s ease;
+}
+.text-pill:has(input:checked) span {
+  background: var(--color-coral);
+  border-color: var(--color-coral);
+  color: #fff;
+}

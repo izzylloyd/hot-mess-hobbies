@@ -1,0 +1,89 @@
+---
+layout: base.njk
+permalink: freshwater-aquariums.html
+title: Freshwater Aquariums — Hot Mess Hobby Shop
+description: "{{ freshwaterAquariums.metaDescription }}"
+---
+<section class="hero" style="padding-bottom:0;">
+  <div class="container">
+    <h1>Freshwater Aquariums</h1>
+    <p class="lead">{{ freshwaterAquariums.lead }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title text-center">{{ freshwaterAquariums.plants.heading }}</h2>
+    <p class="section-sub">{{ freshwaterAquariums.plants.intro }}</p>
+
+    <div class="card-grid">
+      {%- for product in freshwaterAquariums.plants.products %}
+      <div class="card">
+        <div class="card-img"><img src="images/{{ product.image or 'plant-placeholder.svg' }}" alt="{{ product.name }}"></div>
+        <div class="card-body">
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.description }}</p>
+          <p class="price">{{ product.price }}</p>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title text-center">{{ freshwaterAquariums.gallery.heading }}</h2>
+    <p class="section-sub">{{ freshwaterAquariums.gallery.intro }}</p>
+
+    <div class="card-grid">
+      {%- for tank in freshwaterAquariums.gallery.tanks %}
+      <div class="card">
+        <div class="card-img"><img src="images/{{ tank.image }}" alt="{{ tank.size }} freshwater aquarium"></div>
+        <div class="card-body">
+          <h3>{{ tank.size }}</h3>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title text-center">{{ freshwaterAquariums.requestForm.heading }}</h2>
+    <p class="section-sub">{{ freshwaterAquariums.requestForm.intro }}</p>
+
+    <form name="aquarium-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="aquarium-request">
+      <p style="display:none;">
+        <label>Leave this field blank: <input name="bot-field"></label>
+      </p>
+
+      <label>What do you need?</label>
+      <div class="text-pill-group" style="margin-top:8px; margin-bottom:20px;">
+        <label class="text-pill"><input type="radio" name="requestType" value="Tank Audit / Consultation" required><span>Tank Audit / Consultation</span></label>
+        <label class="text-pill"><input type="radio" name="requestType" value="Custom Build" required><span>Custom Build</span></label>
+      </div>
+
+      <label for="ar-name">Name</label>
+      <input type="text" id="ar-name" name="name" required>
+
+      <label for="ar-email">Email</label>
+      <input type="email" id="ar-email" name="email" required>
+
+      <label for="ar-size">Tank Size</label>
+      <input type="text" id="ar-size" name="tankSize" placeholder="e.g. 10 gallon, or &quot;not sure yet&quot;">
+
+      <label for="ar-location">Location / Zip</label>
+      <input type="text" id="ar-location" name="location" placeholder="Custom builds are local pickup/delivery only">
+
+      <label for="ar-message">Tell me about your tank</label>
+      <textarea id="ar-message" name="message" rows="4" placeholder="Current stocking/plants, problems you're seeing, or what you're envisioning for a custom build." required></textarea>
+
+      <div class="text-center" style="margin-top:24px;">
+        <button type="submit" class="btn">Send Request</button>
+      </div>
+    </form>
+  </div>
+</section>
