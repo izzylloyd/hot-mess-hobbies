@@ -50,28 +50,54 @@
     "listingIntro": "Full listings, photos, and checkout happen over on eBay — here's what's up right now.",
     "externalShopUrl": "https://www.ebay.com/usr/hotmesshobbies",
     "externalShopLabel": "Shop on eBay",
+    "hasTeamFilter": true,
     "products": [
       {
         "name": "Jordan Addison — 2023 Panini Obsidian RC #7, Black Color Blast",
         "description": "Rookie card, Black Color Blast parallel, professionally graded PSA 10.",
         "price": "$750 or Best Offer",
         "listingUrl": "https://www.ebay.com/itm/366594444552",
-        "image": "jordan-addison-obsidian-rc7.webp"
+        "image": "jordan-addison-obsidian-rc7.webp",
+        "team": "Minnesota Vikings",
+        "conference": "NFC"
       },
       {
         "name": "Josh Allen — 2024 Panini Donruss Downtown! #2",
         "description": "Buffalo Bills insert card, professionally graded PSA 9.",
         "price": "$800 or Best Offer",
         "listingUrl": "https://www.ebay.com/itm/366600295860",
-        "image": "josh-allen-donruss-downtown-2.webp"
+        "image": "josh-allen-donruss-downtown-2.webp",
+        "team": "Buffalo Bills",
+        "conference": "AFC"
       },
       {
         "name": "DeVonta Smith — 2021 Panini Donruss Optic Downtown RC #DT-38",
         "description": "Rookie card, Downtown insert, professionally graded PSA 10.",
         "price": "$1,100 or Best Offer",
         "listingUrl": "https://www.ebay.com/itm/366600296944",
-        "image": "devonta-smith-donruss-optic-downtown.webp"
-      }
+        "image": "devonta-smith-donruss-optic-downtown.webp",
+        "team": "Philadelphia Eagles",
+        "conference": "NFC"
+      },
+      { "image": "card-new-04.webp", "comingSoon": true, "team": "Philadelphia Eagles", "conference": "NFC" },
+      { "image": "card-new-05.webp", "comingSoon": true, "team": "New England Patriots", "conference": "AFC" },
+      { "image": "card-new-06.webp", "comingSoon": true, "team": "Carolina Panthers", "conference": "NFC" },
+      { "image": "card-new-07.webp", "comingSoon": true, "team": "Baltimore Ravens", "conference": "AFC" },
+      { "image": "card-new-08.webp", "comingSoon": true, "team": "Philadelphia Eagles", "conference": "NFC" },
+      { "image": "card-new-09.webp", "comingSoon": true, "team": "Jacksonville Jaguars", "conference": "AFC" },
+      { "image": "card-new-10.webp", "comingSoon": true, "team": "Las Vegas Raiders", "conference": "AFC" },
+      { "image": "card-new-11.webp", "comingSoon": true, "team": "Tennessee Titans", "conference": "AFC" },
+      { "image": "card-new-12.webp", "comingSoon": true, "team": "Houston Texans", "conference": "AFC" },
+      { "image": "card-new-13.webp", "comingSoon": true, "team": "Cincinnati Bengals", "conference": "AFC" },
+      { "image": "card-new-14.webp", "comingSoon": true, "team": "New York Jets", "conference": "AFC" },
+      { "image": "card-new-15.webp", "comingSoon": true, "team": "San Francisco 49ers", "conference": "NFC" },
+      { "image": "card-new-16.webp", "comingSoon": true, "team": "Dallas Cowboys", "conference": "NFC" },
+      { "image": "card-new-17.webp", "comingSoon": true, "team": "Indianapolis Colts", "conference": "AFC" },
+      { "image": "card-new-18.webp", "comingSoon": true, "team": "Minnesota Vikings", "conference": "NFC" },
+      { "image": "card-new-19.webp", "comingSoon": true, "team": "Arizona Cardinals", "conference": "NFC" },
+      { "image": "card-new-20.webp", "comingSoon": true, "team": "Buffalo Bills", "conference": "AFC" },
+      { "image": "card-new-21.webp", "comingSoon": true, "team": "Seattle Seahawks", "conference": "NFC" },
+      { "image": "card-new-22.webp", "comingSoon": true, "team": "Green Bay Packers", "conference": "NFC" }
     ],
     "highlight": {
       "heading": "Have a Want List?",

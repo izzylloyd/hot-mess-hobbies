@@ -26,19 +26,57 @@ eleventyComputed:
     <h2 class="section-title text-center">{{ venture.listingTitle }}</h2>
     <p class="section-sub">{{ venture.listingIntro }}</p>
 
+    {%- if venture.hasTeamFilter %}
+    <div class="filter-bar" data-card-filter>
+      <div class="filter-field">
+        <label for="conference-filter">Conference</label>
+        <select id="conference-filter">
+          <option value="all">All Conferences</option>
+          <option value="AFC">AFC</option>
+          <option value="NFC">NFC</option>
+        </select>
+      </div>
+      <div class="filter-field">
+        <label for="team-filter">Team</label>
+        <select id="team-filter">
+          <option value="all">All Teams</option>
+          {%- for conf, divisions in nflTeams %}
+          <optgroup label="{{ conf }}">
+            {%- for div, teams in divisions %}
+            {%- for team in teams %}
+            <option value="{{ team }}" data-conference="{{ conf }}">{{ team }}</option>
+            {%- endfor %}
+            {%- endfor %}
+          </optgroup>
+          {%- endfor %}
+        </select>
+      </div>
+    </div>
+    <p class="filter-empty" data-filter-empty hidden>No cards match that filter yet.</p>
+    {%- endif %}
+
     <div class="card-grid">
       {%- for product in venture.products %}
-      <div class="card">
-        <div class="card-img"><img src="images/{{ product.image or venture.image }}" alt="{{ product.name }}"></div>
+      <div class="card"{% if product.team %} data-team="{{ product.team }}" data-conference="{{ product.conference }}"{% endif %}>
+        <div class="card-img"><img src="images/{{ product.image or venture.image }}" alt="{{ product.name or (venture.name + ' listing') }}"></div>
         <div class="card-body">
+          {%- if product.name %}
           <h3>{{ product.name }}</h3>
+          {%- endif %}
+          {%- if product.description %}
           <p>{{ product.description }}</p>
+          {%- endif %}
+          {%- if product.price %}
           <p class="price">{{ product.price }}</p>
+          {%- endif %}
           {%- if product.listingUrl %}
           <a href="{{ product.listingUrl }}" class="btn" target="_blank" rel="noopener">View on eBay</a>
           {%- endif %}
           {%- if product.ctaUrl %}
           <a href="{{ product.ctaUrl }}" class="btn">{{ product.ctaLabel }}</a>
+          {%- endif %}
+          {%- if product.comingSoon %}
+          <span class="btn btn-disabled">Listing Coming Soon</span>
           {%- endif %}
         </div>
       </div>
@@ -61,3 +99,7 @@ eleventyComputed:
     </div>
   </div>
 </section>
+
+{%- if venture.hasTeamFilter %}
+<script src="js/card-filter.js"></script>
+{%- endif %}

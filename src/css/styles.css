@@ -78,6 +78,13 @@ img { max-width: 100%; display: block; }
   color: var(--color-jungle);
 }
 .btn-outline:hover { background: var(--color-jungle); color: #fff; }
+.btn.btn-disabled {
+  background: #C9C2B8;
+  color: #6b6259;
+  cursor: default;
+  pointer-events: none;
+}
+.btn.btn-disabled:hover { background: #C9C2B8; transform: none; }
 
 /* ---------- Header / Nav ---------- */
 .site-header {
@@ -164,6 +171,36 @@ section { padding: 20px 0; }
   max-width: 900px;
   margin: 0 auto 40px;
   color: #5a5049;
+}
+
+/* ---------- Card filter ---------- */
+.filter-bar {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.filter-field { display: flex; flex-direction: column; gap: 4px; }
+.filter-field label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.filter-field select {
+  padding: 10px 14px;
+  border: 2px solid var(--color-cream-dark);
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: #fff;
+  min-width: 200px;
+}
+.filter-field select:focus { outline: none; border-color: var(--color-coral); }
+.filter-empty {
+  text-align: center;
+  color: #5a5049;
+  margin-bottom: 28px;
 }
 
 /* ---------- Venture / Product cards ---------- */
