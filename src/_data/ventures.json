@@ -47,7 +47,7 @@
     "homeDescription": "Vintage finds, modern rookies, and everything in between. Buying, selling, and always down to talk shop about a want list.",
     "homeCta": "Browse Football Cards",
     "listingTitle": "Current Listings",
-    "listingIntro": "Placeholder listings below — swap these out with real cards, photos, and prices whenever you're ready.",
+    "listingIntro": "Full listings, photos, and checkout happen over on eBay — here's what's up right now.",
     "externalShopUrl": "https://www.ebay.com/usr/hotmesshobbies",
     "externalShopLabel": "Shop on eBay",
     "products": [
@@ -59,14 +59,18 @@
         "image": "jordan-addison-obsidian-rc7.webp"
       },
       {
-        "name": "Rookie Card, Raw",
-        "description": "Ungraded rookie card, near-mint condition.",
-        "price": "$20"
+        "name": "Josh Allen — 2024 Panini Donruss Downtown! #2",
+        "description": "Buffalo Bills insert card, professionally graded PSA 9.",
+        "price": "$800 or Best Offer",
+        "listingUrl": "https://www.ebay.com/itm/366600295860",
+        "image": "josh-allen-donruss-downtown-2.webp"
       },
       {
-        "name": "Mystery Lot (10 cards)",
-        "description": "A grab bag of mixed-year commons and semi-stars.",
-        "price": "$15"
+        "name": "DeVonta Smith — 2021 Panini Donruss Optic Downtown RC #DT-38",
+        "description": "Rookie card, Downtown insert, professionally graded PSA 10.",
+        "price": "$1,100 or Best Offer",
+        "listingUrl": "https://www.ebay.com/itm/366600296944",
+        "image": "devonta-smith-donruss-optic-downtown.webp"
       }
     ],
     "highlight": {
