@@ -37,6 +37,19 @@ eleventyComputed:
         </select>
       </div>
       <div class="filter-field">
+        <label for="division-filter">Division</label>
+        <select id="division-filter">
+          <option value="all">All Divisions</option>
+          {%- for conf, divisions in nflTeams %}
+          <optgroup label="{{ conf }}">
+            {%- for div, teams in divisions %}
+            <option value="{{ conf }} {{ div }}" data-conference="{{ conf }}">{{ conf }} {{ div }}</option>
+            {%- endfor %}
+          </optgroup>
+          {%- endfor %}
+        </select>
+      </div>
+      <div class="filter-field">
         <label for="team-filter">Team</label>
         <select id="team-filter">
           <option value="all">All Teams</option>
@@ -44,7 +57,7 @@ eleventyComputed:
           <optgroup label="{{ conf }}">
             {%- for div, teams in divisions %}
             {%- for team in teams %}
-            <option value="{{ team }}" data-conference="{{ conf }}">{{ team }}</option>
+            <option value="{{ team }}" data-conference="{{ conf }}" data-division="{{ conf }} {{ div }}">{{ team }}</option>
             {%- endfor %}
             {%- endfor %}
           </optgroup>
@@ -57,7 +70,7 @@ eleventyComputed:
 
     <div class="card-grid">
       {%- for product in venture.products %}
-      <div class="card"{% if product.team %} data-team="{{ product.team }}" data-conference="{{ product.conference }}"{% endif %}>
+      <div class="card"{% if product.team %} data-team="{{ product.team }}" data-conference="{{ product.conference }}" data-division="{{ product.division }}"{% endif %}>
         <div class="card-img"><img src="images/{{ product.image or venture.image }}" alt="{{ product.name or (venture.name + ' listing') }}"></div>
         <div class="card-body">
           {%- if product.name %}
